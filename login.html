@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700|Nunito+Sans:300,400,700|Open+Sans:300,400,700|Roboto:100,300,400,700" rel="stylesheet"> 
+    <!-- CSS styles -->
+    
+    <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>The RedApp, site for everyone that wants to sell, buy, find a job and get hired!</title>
+</head>
+<body>
+
+    <section class="section-login" id="section-login">
+
+        <div class="login">
+            <div class="login__form">
+                <form method="POST">
+
+                    <div class="login__form-heading">
+                        login
+                    </div>
+                    <div class="login__form-logo">
+                        <i class="fa fa-sign-in"></i>
+                    </div>
+
+
+                    <div class="login__form__group">
+                            <input type="text" class="login__form__input" placeholder="Email" id="email" name="email" autocomplete="off" required>
+                            <label for="email" class="login__form__label"><i class="fa fa-paper-plane-o"></i> Email Address</label>
+                            <div class="email-error"></div>
+                    </div>
+                    <div class="login__form__group">
+                            <input type="password" class="login__form__input" placeholder="Choose Password" id="password" name="password" required>
+                            <label for="password" class="login__form__label"><i class="fa fa-unlock-alt"></i> Password</label>
+                            <div class="password-error"></div>
+                    </div>
+                    
+
+                    <div class="login__form_group progress-bar"></div>
+
+                    <div class="">
+                        <button type="submit" class="btn btn-login" id="submit-registration"> Create Account &rarr;</button>
+                    </div>
+                    <p class="already-member">No Account? Register here? <a href="registration.html" class="to_login">Register</a></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+<script src="vendors/js/jquery-3.4.0.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="vendors/js/bootstrap.min.js"></script> 
+<script src="js/menuClick.js"></script> 
+    
+</body>
+</html>

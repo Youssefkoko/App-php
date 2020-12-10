@@ -1,0 +1,27 @@
+.section-main{
+    background-color: $color-white;
+    margin-bottom: 5rem;
+}
+
+
+.container-fluid{
+    margin-left: 0rem !important;
+    margin-right: 1rem !important;
+    @include mediaQuery(phone6){
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+
+}
+.row{
+    [class^="col-"]{
+        &:last-child{
+            margin-right: 0rem !important;
+        }
+        @include mediaQuery(phone6){
+            margin-right: 0rem !important;
+        }
+        margin-right: 1rem !important;
+    }
+ 
+}

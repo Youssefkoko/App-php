@@ -1,0 +1,89 @@
+.search-box{
+    background-color: rgba(54, 25, 25, .5);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    border-radius: 4px;
+    box-shadow: 0 1rem 2rem rgba($color-white, .4);
+    min-height: 20rem;
+    @include mediaQuery(phone6){
+        top: 45%;
+        min-height: 40rem;
+        width: 100%;
+    }
+
+    //input
+    &__input{
+        $font-family:$roboto-font;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 1.8rem;
+        height: 5rem;
+        padding: 1rem 2rem;
+        margin-top: 7rem;
+        $color:$LinkedIn;
+        float: left;
+        border: none;
+        border-right: 1px solid $LinkedIn;
+        width: 50%;
+        @include mediaQuery(phone6){
+            margin-top: 8rem;
+            width: 100%;
+            height: 6rem;
+        }
+    }
+
+    &__input--right{
+        $font-family:$roboto-font;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 1.8rem;
+        height: 5rem;
+        padding: 1rem 2rem;
+        margin-top: 7rem;
+        $color:$LinkedIn;
+        border: none;
+        float: right;
+        border-right: 1px solid $LinkedIn;
+        width: 50%;
+        @include mediaQuery(phone6){
+            margin-top: 1.5rem;
+            width: 100%;
+            height: 6rem;
+        }
+    }
+
+    &__btn{
+        z-index: 1;
+        background-color: inherit;
+        position: absolute;
+        right: 1rem;
+        background-color: transparent;
+        top: 5.5rem;
+        border:none;
+        cursor: pointer;
+      
+
+
+        @include mediaQuery(phone6){
+            background-color: $primary-color-dark;
+            width: 100%;
+            height: 7rem;
+            top: 100%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        &--icon{
+         
+            font-size: 3rem !important;
+            color: $LinkedIn;
+        }
+        &--icon:hover{
+            
+            color: $color-tertiary-dark;
+        }
+
+    }
+}

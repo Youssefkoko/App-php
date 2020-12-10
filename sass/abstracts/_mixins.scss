@@ -1,0 +1,99 @@
+@mixin centerelements{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+
+@mixin a-links($link,$visit,$hover,$active){
+    a{
+        color:$link;
+        &:visited{
+            color: $visit;
+        }
+        &:hover{
+            color: $hover;
+            text-decoration: none;
+        }
+        &:active{
+            color: $active;
+        }
+    }
+
+    }
+
+
+/*
+small mobile device 0-500px
+mobile device 0-600px
+tablet 600-900
+tablet landscape 900-1200
+desktop 1200 -1800
+large display 1800+
+$screenSize
+smallPhone5
+phone6
+tabletPort7
+tabletPort8
+tabletPort9
+tabletLand1
+tabletLand2
+tabletLand3
+desktop 1800px +
+lgdesktop
+
+*/
+
+@mixin mediaQuery($screenSize){
+
+ @if $screenSize == smallPhone5{
+     @media (max-width:31.25em){ //500px /16
+         @content
+     };
+ }
+ @if $screenSize == phone6{
+    @media (max-width:37.5em){//
+        @content
+    };
+}
+@if $screenSize == tabletPort7{// 700/16
+    @media (max-width:43.5em){
+        @content
+    };
+}
+@if $screenSize == tabletPort8{
+    @media (max-width:50em){
+        @content
+    };
+}
+@if $screenSize == tabletPort9{
+    @media (max-width:56.25em){
+        @content
+    };
+}
+@if $screenSize == tabletLand1{
+    @media (max-width:62.5em){
+        @content
+    };
+}
+@if $screenSize == tabletLand11{
+    @media (max-width:68.5em){
+        @content
+    };
+}
+@if $screenSize == tabletLand12{
+    @media (max-width:75em){
+        @content
+    };
+}
+@if $screenSize == tabletLand13{
+    @media (max-width:81.25em){
+        @content
+    };
+}
+@if $screenSize == desktop{
+    @media (min-width:112.5em){
+        @content
+    };
+}
+}

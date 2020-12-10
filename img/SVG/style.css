@@ -1,0 +1,156 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-comments {
+  width: 1.07421875em;
+}
+
+.icon-cart-arrow-down {
+  width: 0.9287109375em;
+}
+
+.icon-shopping-cart {
+  width: 0.9287109375em;
+}
+
+.icon-line-chart {
+  width: 1.142578125em;
+}
+
+.icon-area-chart {
+  width: 1.142578125em;
+}
+
+.icon-bar-chart {
+  width: 1.142578125em;
+}
+
+.icon-pie-chart {
+  width: 0.9638671875em;
+}
+
+.icon-refresh {
+  width: 0.857421875em;
+}
+
+.icon-edit {
+  width: 1.0009765625em;
+}
+
+.icon-cc-paypal {
+  width: 1.2861328125em;
+}
+
+.icon-paypal {
+  width: 0.857421875em;
+}
+
+.icon-cc-stripe {
+  width: 1.2861328125em;
+}
+
+.icon-user-o {
+  width: 0.857421875em;
+}
+
+.icon-user-plus {
+  width: 1.142578125em;
+}
+
+.icon-automobile {
+  width: 1.142578125em;
+}
+
+.icon-google-wallet {
+  width: 1.0146484375em;
+}
+
+.icon-google-plus-square {
+  width: 0.857421875em;
+}
+
+.icon-google-plus {
+  width: 1.2861328125em;
+}
+
+.icon-sign-out {
+  width: 0.875em;
+}
+
+.icon-sign-in {
+  width: 0.857421875em;
+}
+
+.icon-map-o {
+  width: 1.142578125em;
+}
+
+.icon-map-marker2 {
+  width: 0.5712890625em;
+}
+
+.icon-bed {
+  width: 1.142578125em;
+}
+
+.icon-shower {
+  width: 1.0712890625em;
+}
+
+.icon-home {
+  width: 0.9287109375em;
+}
+
+.icon-keyboard-o {
+  width: 1.0712890625em;
+}
+
+.icon-key1 {
+  width: 0.939453125em;
+}
+
+.icon-user-o1 {
+  width: 0.857421875em;
+}
+
+.icon-user-times {
+  width: 1.1376953125em;
+}
+
+.icon-group {
+  width: 1.0712890625em;
+}
+
+.icon-user-plus1 {
+  width: 1.142578125em;
+}
+
+.icon-user {
+  width: 0.7138671875em;
+}
+
+.icon-paper-plane-o {
+  width: 1.0009765625em;
+}
+
+.icon-paper-plane {
+  width: 1.0009765625em;
+}
+
+.icon-dollar {
+  width: 0.5693359375em;
+}

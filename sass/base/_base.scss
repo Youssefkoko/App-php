@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+
+    //1rem = 10px 10/16 =0.625
+    //Why 10px because easily we can convert 18px to 1.8rem
+    //20 px 2rem and so on
+    //We use most of the time decimals
+    font-size: 62.5%;
+    @include mediaQuery(tabletLand12){
+        font-size: 56.25%; //1rem i decreased to 9px  9/16
+    }
+    @include mediaQuery(tabletPort9){
+        font-size: 50%; //1rem i decreased to 8px  9/16
+    }
+    @include mediaQuery(desktop){
+        font-size: 75%; //1rem I increased it to 12px  12/16
+    }
+}
+body{
+    font-family: $roboto-font;
+    font-weight: 400;
+    line-height: 1.7;
+    color:$color-black;
+    font-size: $default-font-size;
+    box-sizing: border-box;
+}
+
+
+

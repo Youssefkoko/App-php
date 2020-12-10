@@ -1,0 +1,148 @@
+.main-menu{
+    height: 7rem;
+    position: absolute;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: rgba($color-white,.6);
+    color:$color-white;
+
+
+    &__logo-container{
+        width: 17rem;
+        height: 9rem;
+        background-color: rgba($color-white,.6);
+        border-bottom-left-radius:$bubble-size * 2.2; 
+        border-bottom-right-radius:$bubble-size * 2.2;
+        position: absolute;
+        top: 7rem;
+        left: 5rem;
+    }
+    &__menu-logo{
+        @include centerelements;
+        height: 5rem;
+        width: 13rem;
+        margin-top: -1rem;
+    }
+    &__logo--hidden{
+       
+        display: none;
+        height: 5rem;
+        width: 13rem;
+        margin-top: 0.2rem;
+    }
+    .menu{
+        float: right;
+        margin-right: 4rem;
+        margin-top: 0rem;
+    }
+    .menu ul{
+        list-style:none;
+        display: flex;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+    .menu ul ul{
+        display: none;
+    }
+    .menu a{
+        display: block;
+        padding: 1.5rem;
+        color:$color-white;
+        text-decoration: none;
+        &:not(:last-child){
+            border-right: 1px solid $color-grey-light-2;
+        }
+        border-left: 1px solid $color-grey-light-2;
+        border-bottom: 2px solid transparent;
+        }
+
+        .menu a:hover, .menu a:active{
+            color: $color-crimson-red;
+            font-weight: 400;
+            background-color: rgba($color-white,.6);
+            border-bottom: 2px solid $color-crimson-red;
+        }
+        .active-menu{
+            color: $color-white;
+           
+            background-color: rgba($color-crimson-red,.6);
+           
+        }
+        .menu ul li:hover ul{
+            display: block;
+            margin-top: 0rem;
+            width: 100%;
+            background-color: rgba($profile-color-grey-light-4,.6);
+            font-size: 1.8rem;
+        }
+        .hidden{
+            display: none;
+            //  visibility: hidden;
+            // opacity: 0;
+        }
+        .bars,.times{
+           
+            float: right;
+            
+        }
+        @include mediaQuery(tabletPort7){
+            &__logo-container{
+                display: none;
+
+            }
+            &__logo--hidden{
+                display: block;
+                
+            }
+            background-color: rgba($color-white,.9);
+            .bars{
+                display: block;
+                margin-top: -5rem;
+            }
+            .icon-menu{
+                float: right;
+                margin-top: 1rem;
+                margin-right: 2rem;
+                font-size: 3.5rem;
+                cursor: pointer;
+                color:$color-black;
+                &:hover{
+                    text-shadow: 0 1rem 2rem rgba($color-crimson-red,.8);
+                }
+            }
+            .menu{
+                position: absolute;
+                top: 5rem;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+                background-color: $profile-color-grey-light-4;
+                transform: translateX(-100%);
+                transform: all .5s ease-out;
+            }
+            .menu ul{
+                display: block;
+            }
+            .menu ul li:hover ul{
+                display: none;
+            }
+        
+            #btn-menu:checked ~ .menu{
+                transform: translateX(0%);
+            }
+         
+            #btn-menu:checked ~ .icon-menu{
+                .bars{
+                    display: none;
+                }
+                .times{
+                    display: block;
+                    margin-top: -5rem;
+                }
+            }
+
+        }
+
+    }//end of main menu scss
+

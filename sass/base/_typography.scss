@@ -1,0 +1,67 @@
+.primary-heading{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    &--front{
+        display: block;
+        font-size: 8rem;
+        font-weight: 100;
+        letter-spacing: 3.3rem;
+        position: relative;
+       // animation: animation-name 2s infinite;
+       animation-name:animateFront;
+       animation-duration: 1s;
+       animation-delay: 2s;
+       @include mediaQuery(phone6){
+           letter-spacing: 1.5rem;
+           font-size: 7rem;
+           padding-top: 1.2rem;
+       }
+    }
+    &--small{
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: .7rem;
+        animation-name:animateSmall;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        text-align: center;
+        @include mediaQuery(phone6){
+            font-weight: 400;
+            letter-spacing: 0.4rem;
+            font-size: 1.8rem;
+            padding-left: 3rem;
+        }
+    }
+    
+    &--sup{
+        font-size: 2.2rem;
+        text-transform: lowercase;
+        position: absolute;
+        top: 0%;
+        left:-6%;
+        letter-spacing: 0rem;
+        font-weight: 700;
+        @include mediaQuery(phone6){
+            font-weight: 400;
+            
+        }
+    }
+}
+.secondary-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    background-image: linear-gradient(to top, $color-tertiary-very-light, $color-tertiary-very-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+    font-weight: bold;
+    letter-spacing: .1rem;
+
+}
